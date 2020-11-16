@@ -17,6 +17,12 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 17;
+if (votingAge > 18){
+  return true;
+}
+
+
 
 
 
@@ -30,6 +36,14 @@ Do the following:
 
    HINT: no function required
 */
+
+let x = 10;
+let y = 3;
+
+if (x > y){
+  x = 7;
+  return x;
+}
 
 
 
@@ -45,6 +59,10 @@ Do the following:
 
    HINT: look up the Number method
 */
+var year = "1999"
+function parseInt(year){
+  return year;
+}
 
 
 
@@ -58,7 +76,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+let a = 6
+let b = 3
+
+function multiply(a, b){
+  return (a * b);
     /*add your code here*/
   }
 
@@ -74,9 +96,15 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(humanYears){
+    newAge = humanYears * 7;
+    return newAge
 }
+
+var dogYears = 7
+var humanYears = 1
+
+console.log(humanYears * dogYears)
 
 
 
@@ -107,7 +135,9 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
+function hungryDog(15lbs){
+  dogAge = 1;
+
     /*add your code here*/
   }
 
@@ -131,9 +161,46 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
+let computer = Math.floor(Math.random()*3)
 
 function game(user, computer){
     /*add your code here*/
+    
+    let user = string.toLowerCase(user);
+    
+    if(user === "scissors" && computer === 0){
+      return "you lose!";
+    
+    }else if( user === "scissors" && computer === 1){
+      return "you win!";
+
+    }else if(user === "scissors" && computer === 2){
+      return "it's a tie";
+    
+    }else if(user === "paper" && computer === 0){
+      return "you win!";
+    
+    }else if(user === "paper" && computer === 1){
+      return "it's a tie";
+    
+    }else if(user === "paper" && computer === 2){
+      return "you lose!";
+    
+    }else if(user === "rock" && computer === 0){
+      return "it's a tie";
+    
+    }else if(user === "rock" && computer === 1){
+      return "you lose!";
+    
+    }else if(user === "rock" && computer === 2){
+      return "you win!";
+    
+    }else{
+      return "Invalid Entry"
+    }
+
+
+}
 }
   
   
